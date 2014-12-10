@@ -7,35 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F36229511A1150DF0070B125 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36229501A1150DF0070B125 /* CoreLocation.framework */; };
+		F36229551A1170D90070B125 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36229541A1170D90070B125 /* Images.xcassets */; };
 		F3910AC21A03B3AA00F96D97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3910AC11A03B3AA00F96D97 /* AppDelegate.swift */; };
 		F3910AC41A03B3AA00F96D97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3910AC31A03B3AA00F96D97 /* ViewController.swift */; };
 		F3910AC71A03B3AA00F96D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3910AC51A03B3AA00F96D97 /* Main.storyboard */; };
-		F3910AC91A03B3AA00F96D97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3910AC81A03B3AA00F96D97 /* Images.xcassets */; };
-		F3910ACC1A03B3AA00F96D97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3910ACA1A03B3AA00F96D97 /* LaunchScreen.xib */; };
-		F3910AD81A03B3AA00F96D97 /* DoorLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3910AD71A03B3AA00F96D97 /* DoorLockTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F3910AD21A03B3AA00F96D97 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3910AB41A03B3AA00F96D97 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3910ABB1A03B3AA00F96D97;
-			remoteInfo = DoorLock;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		F36229501A1150DF0070B125 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F36229541A1170D90070B125 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F3910ABC1A03B3AA00F96D97 /* DoorLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3910AC01A03B3AA00F96D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3910AC11A03B3AA00F96D97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3910AC31A03B3AA00F96D97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3910AC61A03B3AA00F96D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F3910AC81A03B3AA00F96D97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F3910ACB1A03B3AA00F96D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F3910AD11A03B3AA00F96D97 /* DoorLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3910AD61A03B3AA00F96D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3910AD71A03B3AA00F96D97 /* DoorLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorLockTests.swift; sourceTree = "<group>"; };
+		F3A88B081A03EB4300C58CE0 /* DoorLock-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DoorLock-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3910ACE1A03B3AA00F96D97 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F36229511A1150DF0070B125 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				F3910ABE1A03B3AA00F96D97 /* DoorLock */,
-				F3910AD41A03B3AA00F96D97 /* DoorLockTests */,
+				F36229501A1150DF0070B125 /* CoreLocation.framework */,
 				F3910ABD1A03B3AA00F96D97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				F3910ABC1A03B3AA00F96D97 /* DoorLock.app */,
-				F3910AD11A03B3AA00F96D97 /* DoorLockTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,8 +60,8 @@
 				F3910AC11A03B3AA00F96D97 /* AppDelegate.swift */,
 				F3910AC31A03B3AA00F96D97 /* ViewController.swift */,
 				F3910AC51A03B3AA00F96D97 /* Main.storyboard */,
-				F3910AC81A03B3AA00F96D97 /* Images.xcassets */,
-				F3910ACA1A03B3AA00F96D97 /* LaunchScreen.xib */,
+				F3A88B081A03EB4300C58CE0 /* DoorLock-Bridging-Header.h */,
+				F36229541A1170D90070B125 /* Images.xcassets */,
 				F3910ABF1A03B3AA00F96D97 /* Supporting Files */,
 			);
 			path = DoorLock;
@@ -91,23 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				F3910AC01A03B3AA00F96D97 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F3910AD41A03B3AA00F96D97 /* DoorLockTests */ = {
-			isa = PBXGroup;
-			children = (
-				F3910AD71A03B3AA00F96D97 /* DoorLockTests.swift */,
-				F3910AD51A03B3AA00F96D97 /* Supporting Files */,
-			);
-			path = DoorLockTests;
-			sourceTree = "<group>";
-		};
-		F3910AD51A03B3AA00F96D97 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F3910AD61A03B3AA00F96D97 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,24 +95,6 @@
 			productReference = F3910ABC1A03B3AA00F96D97 /* DoorLock.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F3910AD01A03B3AA00F96D97 /* DoorLockTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3910ADE1A03B3AA00F96D97 /* Build configuration list for PBXNativeTarget "DoorLockTests" */;
-			buildPhases = (
-				F3910ACD1A03B3AA00F96D97 /* Sources */,
-				F3910ACE1A03B3AA00F96D97 /* Frameworks */,
-				F3910ACF1A03B3AA00F96D97 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F3910AD31A03B3AA00F96D97 /* PBXTargetDependency */,
-			);
-			name = DoorLockTests;
-			productName = DoorLockTests;
-			productReference = F3910AD11A03B3AA00F96D97 /* DoorLockTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +106,7 @@
 				TargetAttributes = {
 					F3910ABB1A03B3AA00F96D97 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					F3910AD01A03B3AA00F96D97 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = F3910ABB1A03B3AA00F96D97;
+						DevelopmentTeam = G6HAS4FMP3;
 					};
 				};
 			};
@@ -182,7 +124,6 @@
 			projectRoot = "";
 			targets = (
 				F3910ABB1A03B3AA00F96D97 /* DoorLock */,
-				F3910AD01A03B3AA00F96D97 /* DoorLockTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,15 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3910AC71A03B3AA00F96D97 /* Main.storyboard in Resources */,
-				F3910ACC1A03B3AA00F96D97 /* LaunchScreen.xib in Resources */,
-				F3910AC91A03B3AA00F96D97 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3910ACF1A03B3AA00F96D97 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F36229551A1170D90070B125 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,28 +145,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3910AC41A03B3AA00F96D97 /* ViewController.swift in Sources */,
 				F3910AC21A03B3AA00F96D97 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3910ACD1A03B3AA00F96D97 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3910AD81A03B3AA00F96D97 /* DoorLockTests.swift in Sources */,
+				F3910AC41A03B3AA00F96D97 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F3910AD31A03B3AA00F96D97 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F3910ABB1A03B3AA00F96D97 /* DoorLock */;
-			targetProxy = F3910AD21A03B3AA00F96D97 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F3910AC51A03B3AA00F96D97 /* Main.storyboard */ = {
@@ -242,14 +159,6 @@
 				F3910AC61A03B3AA00F96D97 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F3910ACA1A03B3AA00F96D97 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3910ACB1A03B3AA00F96D97 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,9 +245,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DoorLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DoorLock/DoorLock-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -346,43 +261,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DoorLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		F3910ADF1A03B3AA00F96D97 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DoorLockTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoorLock.app/DoorLock";
-			};
-			name = Debug;
-		};
-		F3910AE01A03B3AA00F96D97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DoorLockTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoorLock.app/DoorLock";
+				SWIFT_OBJC_BRIDGING_HEADER = "DoorLock/DoorLock-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -405,14 +292,7 @@
 				F3910ADD1A03B3AA00F96D97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		F3910ADE1A03B3AA00F96D97 /* Build configuration list for PBXNativeTarget "DoorLockTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3910ADF1A03B3AA00F96D97 /* Debug */,
-				F3910AE01A03B3AA00F96D97 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
