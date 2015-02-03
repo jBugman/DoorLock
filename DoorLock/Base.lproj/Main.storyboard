@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -34,10 +34,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMQ-dM-ErI">
+                                <rect key="frame" x="293" y="161" width="15" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYQ-B1-xm9">
+                                <rect key="frame" x="293" y="190" width="15" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mo8-1V-wAT" firstAttribute="leading" secondItem="GuW-BR-7TJ" secondAttribute="leading" id="0RJ-rz-wtB"/>
+                            <constraint firstItem="fMQ-dM-ErI" firstAttribute="leading" secondItem="tYQ-B1-xm9" secondAttribute="leading" id="ItB-WU-ses"/>
+                            <constraint firstItem="fMQ-dM-ErI" firstAttribute="leading" secondItem="cXq-QQ-x46" secondAttribute="leading" id="PRs-kF-uEe"/>
+                            <constraint firstItem="fMQ-dM-ErI" firstAttribute="top" secondItem="cXq-QQ-x46" secondAttribute="bottom" constant="45" id="UoC-I9-Vnq"/>
+                            <constraint firstItem="tYQ-B1-xm9" firstAttribute="top" secondItem="fMQ-dM-ErI" secondAttribute="bottom" constant="8" symbolic="YES" id="Wkq-8B-6dC"/>
                             <constraint firstItem="cXq-QQ-x46" firstAttribute="leading" secondItem="GuW-BR-7TJ" secondAttribute="leading" id="YdS-71-z7B"/>
                             <constraint firstItem="mo8-1V-wAT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="17" id="Ytv-gE-u4R"/>
                             <constraint firstItem="cXq-QQ-x46" firstAttribute="top" secondItem="GuW-BR-7TJ" secondAttribute="bottom" constant="8" symbolic="YES" id="gbs-tK-NgU"/>
@@ -47,8 +63,10 @@
                     </view>
                     <connections>
                         <outlet property="beakonAvailableLabel" destination="mo8-1V-wAT" id="cTw-li-eGB"/>
+                        <outlet property="farLabel" destination="tYQ-B1-xm9" id="Nh9-WA-mjQ"/>
                         <outlet property="label2" destination="GuW-BR-7TJ" id="nTC-un-NKf"/>
                         <outlet property="label3" destination="cXq-QQ-x46" id="LAN-Xi-aVS"/>
+                        <outlet property="nearLabel" destination="fMQ-dM-ErI" id="sXp-BK-I1J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
